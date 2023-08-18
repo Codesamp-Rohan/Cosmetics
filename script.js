@@ -37,3 +37,8 @@ ScrollReveal().reveal(".navbar");
 ScrollReveal().reveal(".topAreaText", { delay: 300 });
 ScrollReveal().reveal(".aboutImage", { delay: 500 });
 ScrollReveal().reveal(".about>h1", { delay: 500 });
+
+ScrollReveal().reveal("#boxContent1", { delay: 300 });
+ScrollReveal().reveal("#boxContent2", { delay: 600 });
+ScrollReveal().reveal("#boxContent3", { delay: 900 });
+ScrollReveal().reveal("#boxContent4", { delay: 1200 });
