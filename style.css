@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Playfair Display", serif !important;
+}
+body {
+  width: 100svw;
+  height: auto;
+  z-index: -1;
+  position: relative;
+  overflow-x: hidden;
+}
+main {
+  z-index: -1;
+  position: relative;
+}
+.hidden {
+  display: none !important;
+}
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: #01010184;
+  border: 1px solid #000000cb;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+.contactUs {
+  padding-inline: 30px;
+  padding-block: 60px;
+  border: 1px solid;
+  width: 40vw;
+  position: fixed;
+  scroll-behavior: smooth;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form input {
+  height: 50px;
+  padding-inline-start: 20px;
+  border: 1px solid;
+}
+textarea {
+  border: 1px solid;
+  padding: 20px;
+}
+form button {
+  height: 50px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-inline-end: 10px;
+  cursor: pointer;
+}
+.overlay {
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #01010159;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+  padding-block: 20px;
+  padding-inline: 40px;
+  top: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.navbar a::after,
+.navbar button::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.navbar a:hover::after,
+.navbar button:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+.leftNavbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 40px;
+  align-items: center;
+}
+.leftNavbar a:nth-child(1) {
+  font-weight: 600;
+}
+.dropbtn {
+  background-color: transparent;
+  border: 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.contactBtn {
+  background-color: transparent;
+  border: 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.dropdown-content {
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  padding-block: 10px;
+  background-color: #dddddd;
+}
+.dropdown-content a {
+  font-weight: 100 !important;
+  padding: 10px;
+}
+.rightNavbar {
+  position: relative;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.fa-circle {
+  font-size: 10px !important;
+  color: #000000cb;
+}
+.topArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  position: relative;
+  margin-top: 100px;
+}
+.topAreaText {
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8;
+  background-color: #ffffff96;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+.topAreaText span {
+  display: flex;
+}
+.topAreaText span p {
+  font-size: clamp(8px, 1vw, 14px);
+  color: #0000004c;
+  padding-block: 10px;
+}
+.topAreaText span h1 {
+  font-size: clamp(2rem, 8.333333vw, 5rem);
+  font-weight: 100;
+  color: #010101;
+  font-family: "Playfair Display", serif !important;
+}
+.line {
+  width: 100svw;
+  height: 1px;
+  background-color: #010101;
+  position: absolute;
+  z-index: -5;
+  margin-top: 150px;
+}
+.topAreaText p {
+  font-size: clamp(7px, 2vw, 10px);
+  color: #0000004c;
+  padding-block: 10px;
+  text-align: center;
+}
+.try {
+  display: flex;
+  flex-direction: column;
+}
+.try h1::before {
+  content: "";
+  height: 40px;
+  width: 20%;
+  position: absolute;
+  display: block;
+  background-color: #0000004c;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  transform-origin: top;
+}
+.try h1:hover::before {
+  transform: scale(1);
+  transform-origin: bottom;
+}
+.try h1:nth-child(2) {
+  color: rgba(212, 212, 212, 0.557);
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  z-index: -1;
+}
+.word {
+  cursor: pointer;
+}
+.aboutImage {
+  height: 250px;
+  width: 90vw;
+  object-fit: cover;
+  position: relative;
+  transform: translate(-50%, 25%);
+  left: 50%;
+}
+.about {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about h1::before {
+  content: "";
+  height: 67px;
+  width: 1px;
+  background-color: #010101;
+  position: relative;
+}
+.about h1 {
+  font-size: clamp(2rem, 8.333333vw, 5rem);
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan&family=Dancing+Script&family=Grandiflora+One&family=Handjet:wght@500&family=Inter&family=Lora&family=Overpass:wght@100&family=Playfair+Display&family=Poppins:wght@900&family=Press+Start+2P&family=Quicksand:wght@300&family=Rock+3D&display=swap"
+      rel="stylesheet" />
+    <!-- Js -->
+
+    <title>Cosmetics</title>
+  </head>
+  <!-- <div class="cursor"></div> -->
+  <div class="contactUs hidden">
+    <h1 class="close">&times;</h1>
+    <form>
+      <input type="text" class="name" id="name" placeholder="Name" />
+      <input type="email" class="email" id="email" placeholder="Email" />
+      <textarea
+        type="text"
+        class="message"
+        id="message"
+        rows="10"
+        cols="20"
+        placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+  <body>
+    <div class="navbar">
+      <div class="leftNavbar">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            CAPABILITIES
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content hidden">
+            <a href="#">Cosmetics Manufacturing</a>
+            <a href="#">Bar Soap Manufacturing</a>
+            <a href="#">Cosmetic Packaging Manufacturing</a>
+          </div>
+        </div>
+      </div>
+      <img src="images/" class="logo" alt="" />
+      <div class="rightNavbar">
+        <i class="fa fa-circle"></i>
+        <button class="contactBtn">CONTACT US</button>
+      </div>
+    </div>
+    <main>
+      <div class="topArea">
+        <div class="line"></div>
+        <div class="topAreaText">
+          <span
+            ><p>01</p>
+            <span class="try">
+              <h1 class="word">SCIENTIFIC</h1>
+              <h1 class="word">SCIENTIFIC</h1>
+            </span>
+          </span>
+          <span
+            ><p>02</p>
+            <span class="try">
+              <h1>SUSTAINABLE</h1>
+              <h1>SUSTAINABLE</h1>
+            </span>
+          </span>
+          <span
+            ><p>03</p>
+            <span class="try">
+              <h1>CLEAN</h1>
+              <h1>CLEAN</h1>
+            </span>
+          </span>
+          <span
+            ><p>04</p>
+            <span class="try">
+              <h1>CUSTOM</h1>
+              <h1>CUSTOM</h1>
+            </span>
+          </span>
+          <span
+            ><p>05</p>
+            <span class="try">
+              <h1>INNOVATIVE</h1>
+              <h1>INNOVATIVE</h1>
+            </span>
+          </span>
+          <p>
+            Cosmetics, leading cosmetics, bar soap, and packaging manufacturer
+            in the United States
+          </p>
+        </div>
+      </div>
+      <img
+        class="aboutImage"
+        loading="lazy"
+        src="https://i.pinimg.com/originals/87/a6/96/87a6962b23f3fdfd7dec17061ffa5aa3.jpg"
+        alt="" />
+      <div class="about">
+        <h1>About Us</h1>
+      </div>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
