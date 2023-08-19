@@ -44,7 +44,7 @@ $(".slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 2000,
 });
 
 const option1 = document.querySelector("#option1");
