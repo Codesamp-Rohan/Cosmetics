@@ -40,12 +40,7 @@ ScrollReveal().reveal(".boxImage4", { delay: 800 });
 
 ScrollReveal().reveal(".rangeLine", { delay: 300 });
 
-$(".slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
+$(".slider").slick();
 
 const option1 = document.querySelector("#option1");
 const option2 = document.querySelector("#option2");
@@ -68,7 +63,6 @@ option1.addEventListener("click", function () {
   para1.style.fontWeight = "600";
   para2.style.fontWeight = "100";
   para3.style.fontWeight = "100";
-  leftProduct.style.marginTop = "0vh";
 });
 option2.addEventListener("click", function () {
   productImage2.classList.remove("hidden");
@@ -77,7 +71,6 @@ option2.addEventListener("click", function () {
   para2.style.fontWeight = "600";
   para1.style.fontWeight = "100";
   para3.style.fontWeight = "100";
-  leftProduct.style.marginTop = "-15vh";
 });
 option3.addEventListener("click", function () {
   productImage3.classList.remove("hidden");
@@ -86,5 +79,27 @@ option3.addEventListener("click", function () {
   para3.style.fontWeight = "600";
   para1.style.fontWeight = "100";
   para2.style.fontWeight = "100";
-  leftProduct.style.marginTop = "-30vh";
+});
+
+// SWIPER
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });
