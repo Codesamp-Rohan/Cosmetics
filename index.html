@@ -20,7 +20,19 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Cosmetics</title>
   </head>
-  <!-- <div class="cursor"></div> -->
+  <!-- LOADER -->
+    <div id="example-4" class="loader">
+        <div id="ball-container-1" class="ball-container">
+            <div id="ball-1" class="ball"></div>
+        </div>
+        <div id="ball-container-2" class="ball-container">
+            <div id="ball-2" class="ball"></div>
+        </div>
+        <div id="ball-container-3" class="ball-container">
+            <div id="ball-3" class="ball"></div>
+        </div>
+    </div>
+    <!-- LOADER END -->
   <div class="contactUs hidden">
     <h1 class="close">&times;</h1>
     <form>
@@ -58,6 +70,21 @@
         <button class="contactBtn">CONTACT US</button>
       </div>
     </div>
+    <!-- Mobile Navbar -->
+    <nav>
+  <ul class="nav-links"> 
+      <a href="#">Home</a>
+      <a href="#">About</a> 
+      <a href="#">Contact</a>
+     <a href="#">Blog</a> 
+
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
     <main>
       <ul class="slider">
         <li>
@@ -77,7 +104,7 @@
         class="topArea"
         behavior="scroll"
         direction="left"
-        scrollamount="3">
+        scrollamount="5" >
         <div class="topAreaText">
           <span class="try">
             <h1>SCIENTIFIC</h1>
@@ -299,10 +326,10 @@
     <footer>
       <div class="work">
         <video
-          src="https://akemicosmetics.com/wp-content/uploads/2023/06/vbox.mp4"
+          src="images/vbox.mp4"
           muted
           loop
-          autoplay></video>
+          autoplay loading = "lazy"></video>
         <div class="workContent">
           <div class="leftWorkContent">
             <h2>
