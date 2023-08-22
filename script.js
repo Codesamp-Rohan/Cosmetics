@@ -28,25 +28,6 @@ overlay.addEventListener("click", function () {
   contactUs.classList.add("hidden");
   overlay.classList.add("hidden");
 });
-// JS
-ScrollReveal().reveal(".navbar");
-ScrollReveal().reveal(".topAreaText", { delay: 300 });
-ScrollReveal().reveal(".aboutImage", { delay: 500 });
-ScrollReveal().reveal(".about>h1", { delay: 500 });
-
-ScrollReveal().reveal("#boxContent1", { delay: 200 });
-ScrollReveal().reveal("#boxContent2", { delay: 400 });
-ScrollReveal().reveal("#boxContent3", { delay: 600 });
-ScrollReveal().reveal("#boxContent4", { delay: 800 });
-
-ScrollReveal().reveal(".boxImage1", { delay: 200 });
-ScrollReveal().reveal(".boxImage2", { delay: 400 });
-ScrollReveal().reveal(".boxImage3", { delay: 600 });
-ScrollReveal().reveal(".boxImage4", { delay: 800 });
-
-ScrollReveal().reveal(".rangeLine", { delay: 300 });
-
-$(".slider").slick();
 
 const option1 = document.querySelector("#option1");
 const option2 = document.querySelector("#option2");
@@ -87,7 +68,7 @@ option3.addEventListener("click", function () {
   para2.style.fontWeight = "100";
 });
 
-// SWIPER
+// // SWIPER
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",

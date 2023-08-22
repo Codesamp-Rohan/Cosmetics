@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Shippori Mincho B1", serif;
   scroll-behavior: smooth;
+
+  /*  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   width: 100svw;
@@ -427,7 +432,7 @@ form button {
   margin-top: -30px;
 }
 .about {
-  margin-top: 70px;
+  margin-top: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -541,24 +546,14 @@ form button {
   height: 1px;
   background-color: #010101;
 }
-.leftProduct::before::before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #010101;
-  position: absolute;
-  display: block;
-}
 .option p {
   font-size: clamp(14px, 10vw, 20px);
   cursor: pointer;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 100;
 }
 .option:nth-child(1) {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 #productImage1 img:nth-child(1) {
   width: 15vw;
@@ -752,7 +747,7 @@ form button {
   font-size: 12px;
 }
 .work video {
-  background-color: #010101;
+  background-color: transparent;
 }
 .footerContact {
   color: white;
@@ -957,6 +952,7 @@ nav {
   color: #000000;
   padding-block: 20px;
   padding-inline: 10px;
+  z-index: 1000;
 }
 .nav-links {
   display: flex;
