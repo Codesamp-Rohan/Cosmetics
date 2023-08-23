@@ -436,8 +436,6 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 .aboutUsLine::before {
   content: "";
@@ -745,9 +743,6 @@ form button {
 }
 .workContent p {
   font-size: 12px;
-}
-.work video {
-  background-color: transparent;
 }
 .footerContact {
   color: white;
